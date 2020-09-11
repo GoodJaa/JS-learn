@@ -1,16 +1,18 @@
 const string = "Привет! Как дела?";
+const vowels = ["а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я"];
 
-function getVovels(string) {
-    for (i=0; i<=string.length; i++){
-        var letter = string[i];
-        if (letter=="и") {
-            getLetter += letter;
-        } else if (letter=="е") {
-            getLetter += output;
-        } else if (letter=="а"){
-            getLetter += letter;
+let getVowels = stringToFilter => {
+    let extractedVowels = "";
+
+    for (let i=0; i<stringToFilter.length; i++) {
+        const currentLetter = stringToFilter[i].toLowerCase();
+
+        if (vowels.includes(currentLetter)) {
+            extractedVowels += currentLetter;
         }
     }
+
+    return extractedVowels;
 }
 
-console.log(getLetter);
+console.log(getVowels(string));
