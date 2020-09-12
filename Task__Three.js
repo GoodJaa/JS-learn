@@ -1,7 +1,7 @@
 const path = "/users/download/index.html";
 
 function isHtml(path) {
-    if (path.indexOf("html") > 0) {
+    if (path.indexOf(".html") > 0) {
         return true;
     } else {
         return false;
