@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a,
 a:visited,
 a:active,
@@ -44,7 +48,6 @@ a:focus {
   align-items: center;
   justify-content: center;
   background-color: papayawhip;
-  box-sizing: border-box;
   width: 100px;
   height: 100px;
   border: 1px solid #444;
